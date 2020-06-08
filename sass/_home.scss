@@ -1,0 +1,54 @@
+.section__choose{
+    background: white;
+    padding: 2em;
+    height: 400px;
+    .heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .heading__style{
+            color: white;
+            background-color: $main-color;
+            padding: 0.6em;
+            transition: transform;
+            transform: rotate(30deg);
+            border-radius: 10px;
+        }
+    }
+    .section__choose--div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 3em;
+        .card{
+            width: 200px;
+            height: auto;
+            text-align: center;
+            h3{
+                margin: 20px;
+                color: rgb(61, 59, 59);
+            }
+            p{
+                color: grey;
+                margin-top: 10px;
+            }
+            .divider{
+                width: 40%;
+                height: 3px;
+                background-color: $main-color;
+                margin:0 auto;
+            }
+        }
+        .fas{
+            font-size: 1.5em;
+            color: #F57C00;
+            padding: 1em;
+            border-radius: 100%;
+            background-color: rgb(219, 218, 218);
+        }
+
+        @include forMobile{
+            display: block;
+        }
+    }
+}
