@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  background-image: url("/images/bg.jpg");
+}
+
 li {
   list-style: none;
 }
@@ -37,12 +41,13 @@ nav .menu-nav ul li a:hover::after {
 
 nav {
   width: 100%;
-  height: 50px;
+  height: 80px;
   display: flex;
   justify-content: space-evenly;
-  align-self: center;
-  padding: 1em;
+  align-items: center;
   box-shadow: 0 1px 2px 0 grey;
+  background: white;
+  z-index: 5;
 }
 nav .menu-nav ul {
   display: flex;
@@ -80,6 +85,14 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  animation-name: zoom;
+  animation-duration: 5000ms;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
 }
 header .header-bloc {
   width: 40%;
@@ -97,6 +110,73 @@ header .header-bloc p {
 }
 header .header-bloc .challenger {
   font-family: "Dancing Script", cursive;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05) translateX(-1%);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.section__choose {
+  background: white;
+  padding: 2em;
+  height: 400px;
+}
+.section__choose .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__choose .heading .heading__style {
+  color: white;
+  background-color: #557329;
+  padding: 0.6em;
+  transition: transform;
+  transform: rotate(30deg);
+  border-radius: 10px;
+}
+.section__choose .section__choose--div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3em;
+}
+.section__choose .section__choose--div .card {
+  width: 200px;
+  height: auto;
+  text-align: center;
+}
+.section__choose .section__choose--div .card h3 {
+  margin: 20px;
+  color: #3d3b3b;
+}
+.section__choose .section__choose--div .card p {
+  color: grey;
+  margin-top: 10px;
+}
+.section__choose .section__choose--div .card .divider {
+  width: 40%;
+  height: 3px;
+  background-color: #557329;
+  margin: 0 auto;
+}
+.section__choose .section__choose--div .fas {
+  font-size: 1.5em;
+  color: #F57C00;
+  padding: 1em;
+  border-radius: 100%;
+  background-color: #dbdada;
+}
+@media screen and (max-width: 599px) {
+  .section__choose .section__choose--div {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

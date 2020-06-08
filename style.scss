@@ -1,5 +1,10 @@
 @import "./sass/utils/variables";
+
 @import "./sass/general";
 @import "./sass/utils/animations";
-@import "./sass/nav";
-@import "./sass/header";
+@import "./sass/utils/extensions";
+
+@import "./sass/layout/nav";
+@import "./sass/layout/header";
+
+@import "./sass/home";
