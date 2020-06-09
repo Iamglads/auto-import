@@ -21,7 +21,7 @@ a:hover {
   color: #557329;
 }
 
-nav .menu-nav ul li a::after {
+.main__nav .menu-nav ul li a::after {
   content: "";
   width: auto;
   height: 2px;
@@ -30,16 +30,16 @@ nav .menu-nav ul li a::after {
   transition: 400ms;
   transition-timing-function: ease-in-out;
 }
-nav .menu-nav ul li a:hover {
+.main__nav .menu-nav ul li a:hover {
   transform: scaleX(1);
   border-bottom: 2px solid #557329;
 }
-nav .menu-nav ul li a:hover::after {
+.main__nav .menu-nav ul li a:hover::after {
   transform: scaleX(1);
   transform-origin: 0%;
 }
 
-nav {
+.main__nav {
   width: 100%;
   height: 80px;
   display: flex;
@@ -47,35 +47,61 @@ nav {
   align-items: center;
   box-shadow: 0 1px 2px 0 grey;
   background: white;
-  z-index: 5;
+  z-index: 10;
 }
-nav .menu-nav ul {
+.main__nav .menu-nav ul {
   display: flex;
 }
-nav .menu-nav ul li {
+.main__nav .menu-nav ul li {
   padding: 1em;
 }
-nav .logo {
+@media screen and (max-width: 599px) {
+  .main__nav .menu-nav {
+    display: flex;
+    justify-content: center;
+  }
+}
+.main__nav .logo {
   display: flex;
   justify-content: flex-start;
   align-self: center;
 }
-nav .logo h1 {
+.main__nav .logo h1 {
   color: #557329;
   text-shadow: 2px grey;
   cursor: pointer;
 }
-nav .icon-medias {
+@media screen and (max-width: 599px) {
+  .main__nav .logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+}
+.main__nav .icon-medias {
   display: flex;
   align-self: center;
 }
-nav .icon-medias .fab {
+.main__nav .icon-medias .fab {
   color: grey;
   font-size: 1.5em;
   cursor: pointer;
 }
-nav .icon-medias .fab:hover {
+.main__nav .icon-medias .fab:hover {
   color: #557329;
+}
+@media screen and (max-width: 599px) {
+  .main__nav .icon-medias {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 599px) {
+  .main__nav {
+    height: auto;
+    display: block;
+    justify-content: center;
+  }
 }
 
 header {
@@ -123,34 +149,28 @@ header .header-bloc .challenger {
   }
 }
 
+/*_____CHOOSE CAR SECTION _____*/
 .section__choose {
   background: white;
   padding: 2em;
-  height: 400px;
-}
-.section__choose .heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section__choose .heading .heading__style {
-  color: white;
-  background-color: #557329;
-  padding: 0.6em;
-  transition: transform;
-  transform: rotate(30deg);
-  border-radius: 10px;
+  height: auto;
 }
 .section__choose .section__choose--div {
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 3em;
 }
 .section__choose .section__choose--div .card {
-  width: 200px;
-  height: auto;
+  width: 250px;
+  height: 250px;
   text-align: center;
+  padding: 1em;
+  background-color: rgba(236, 234, 234, 0.753);
+  border-radius: 15px;
+  margin-bottom: 10px;
 }
 .section__choose .section__choose--div .card h3 {
   margin: 20px;
@@ -178,5 +198,50 @@ header .header-bloc .challenger {
     display: block;
   }
 }
+@media screen and (max-width: 599px) {
+  .section__choose {
+    height: 900px;
+  }
+}
+
+.heading {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading .heading__style {
+  color: white;
+  background-color: #557329;
+  padding: 0.6em;
+  transition: transform;
+  transform: rotate(30deg);
+  border-radius: 10px;
+}
+
+/*_____END CHOOSE CAR SECTION _____*/
+/*_____NEW CAR SECTION _____*/
+.section__newCar {
+  background-color: #dbdada;
+}
+.section__newCar .newCar {
+  background-color: #dbdada;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.section__newCar .newCar ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.section__newCar .newCar ul li {
+  padding: 0.5em;
+  margin: 0.5em;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+/*_____END CHOOSE CAR SECTION _____*/
 
 /*# sourceMappingURL=style.css.map */
