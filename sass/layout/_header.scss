@@ -7,7 +7,6 @@ header {
   align-items: center;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   animation-name: zoom;
   animation-duration: 5000ms;
@@ -29,7 +28,12 @@ header {
     .challenger {
       font-family: "Dancing Script", cursive;
     }
+    @include forMobile{
+      width: 100%;
+    }
   }
+
+  /*
   @keyframes zoom {
   0% {
     transform: scale(1);
@@ -41,6 +45,7 @@ header {
     transform: scale(1);
   }
 }
+*/
 }
 
 

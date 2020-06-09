@@ -6,10 +6,10 @@
     align-items: center;
     box-shadow: 0 1px 2px 0 grey;
     background: white;
-    z-index: 10;
     .menu-nav{
         ul{
             display: flex;
+            flex-wrap: wrap;
             li{
                 padding: 1em;
                 a{

@@ -1,10 +1,12 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 body {
   background-image: url("/images/bg.jpg");
+  background-attachment: fixed;
+  background-size: 80%;
 }
 
 li {
@@ -47,10 +49,10 @@ a:hover {
   align-items: center;
   box-shadow: 0 1px 2px 0 grey;
   background: white;
-  z-index: 10;
 }
 .main__nav .menu-nav ul {
   display: flex;
+  flex-wrap: wrap;
 }
 .main__nav .menu-nav ul li {
   padding: 1em;
@@ -113,12 +115,24 @@ header {
   align-items: center;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   animation-name: zoom;
   animation-duration: 5000ms;
   animation-delay: 2s;
   animation-iteration-count: infinite;
+  /*
+    @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05) translateX(-1%);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  */
 }
 header .header-bloc {
   width: 40%;
@@ -137,15 +151,9 @@ header .header-bloc p {
 header .header-bloc .challenger {
   font-family: "Dancing Script", cursive;
 }
-@keyframes zoom {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05) translateX(-1%);
-  }
-  100% {
-    transform: scale(1);
+@media screen and (max-width: 599px) {
+  header .header-bloc {
+    width: 100%;
   }
 }
 
@@ -200,7 +208,7 @@ header .header-bloc .challenger {
 }
 @media screen and (max-width: 599px) {
   .section__choose {
-    height: 900px;
+    height: auto;
   }
 }
 
@@ -218,14 +226,25 @@ header .header-bloc .challenger {
   transform: rotate(30deg);
   border-radius: 10px;
 }
+@media screen and (max-width: 599px) {
+  .heading .heading__style {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 599px) {
+  .heading {
+    padding: 1em;
+    font-size: 1em;
+  }
+}
 
 /*_____END CHOOSE CAR SECTION _____*/
 /*_____NEW CAR SECTION _____*/
 .section__newCar {
-  background-color: #dbdada;
+  background-color: whitesmoke;
 }
 .section__newCar .newCar {
-  background-color: #dbdada;
+  background-color: whitesmoke;
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
@@ -242,6 +261,67 @@ header .header-bloc .challenger {
   border-radius: 10px;
 }
 
+.display__car {
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.display__car article {
+  width: 500px;
+  height: 200px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: white;
+  display: flex;
+  margin-bottom: 20px;
+}
+.display__car article .modelBrand {
+  padding: 1em;
+}
+.display__car article img {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  width: 60%;
+}
+.display__car article h4 {
+  font-size: 1.7em;
+  color: #557329;
+}
+.display__car article h5 {
+  color: grey;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5em;
+}
+.display__car article .iconCars {
+  display: block;
+  color: grey;
+}
+.display__car article .btn-cars {
+  width: 80%;
+  padding: 0.5em;
+  border: 1px solid #557329;
+  border-radius: 30px;
+  background-color: white;
+  color: #557329;
+  cursor: pointer;
+}
+@media screen and (max-width: 599px) {
+  .display__car {
+    height: auto;
+  }
+}
+
 /*_____END CHOOSE CAR SECTION _____*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: white;
+}
 
 /*# sourceMappingURL=style.css.map */

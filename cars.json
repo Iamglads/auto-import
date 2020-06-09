@@ -1,0 +1,51 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "marque": "Bentley",
+          "model": "Continental",
+          "prix":250000.00,
+          "moteur":"Essence",
+          "puissance": "450",
+          "image": { "fields": { "file": { "url": "./images/bentley-continental.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "marque": "Ford",
+          "model": "Mustang",
+          "prix": 35000.00,
+          "moteur":"Essence",
+          "puissance": "450",
+          "image": { "fields": { "file": { "url": "./images/ford-mustang.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "marque": "Porsche",
+          "model": "911",
+          "prix": 130000.00,
+          "moteur":"Essence",
+          "puissance": "450",
+          "image": { "fields": { "file": { "url": "./images/Porsche-911.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "marque": "Chevrolet",
+          "model": "Camaro",
+          "prix": 40000.00,
+          "moteur":"Essence",
+          "puissance": "450",
+          "image": { "fields": { "file": { "url": "./images/chevrolet-camaro.jpg" } } }
+        }
+      }
+   
+   
+    ]
+  }
+  
