@@ -17,9 +17,8 @@
                 }
             }
         }
-        @include forMobile{
-            display: flex;
-            justify-content: center;
+        @include forTablet{
+            display: none;
         }
     }
     .logo{
@@ -49,7 +48,7 @@
             }
         }
         @include forMobile{
-            display: flex;
+            display: none; // display none temporaire
             justify-content: center;
         }
     }

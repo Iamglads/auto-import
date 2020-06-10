@@ -1,7 +1,6 @@
 /*_____CHOOSE CAR SECTION _____*/
 .section__choose{
     background: white;
-    padding: 2em;
     height: auto;
     .section__choose--div{
         height: auto;
@@ -89,34 +88,37 @@ background-color: rgb(245, 245, 245);
             margin: 0.5em;
             border: 1px solid grey;
             border-radius: 10px;
+            text-align: center;
+        }
+        @include forMobile{
+            display: flex;
+            justify-content: flex-start;
         }
     }
 }
 
 }
 .display__car{
-    height: 600px;
+    height: auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     article{
-        width: 500px;
-        height: 200px;
+        width: 250px;
+        height: 340px;
         border-top-left-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-        background-color: rgb(255, 255, 255);
-        display: flex;
+        border-top-right-radius: 25px;
+        box-shadow: 1px 1px 6px 1px rgb(211, 211, 211);
         margin-bottom: 20px;
+        display: block;
         .modelBrand{
             padding: 1em;
         }
         img{
-            border-top-left-radius: 25px;
-            border-bottom-left-radius: 25px;
-            width: 60%;
+
+            width: 100%;
+            height: 150px;
         }
         h4{
             font-size: 1.7em;
@@ -128,8 +130,9 @@ background-color: rgb(245, 245, 245);
              font-size: 1.5em;
         }
         .iconCars{
-            display: block;
+            display: flex;
             color: grey;
+            margin-top: 10px;
         }
         .btn-cars{
             width: 80%;
@@ -139,6 +142,10 @@ background-color: rgb(245, 245, 245);
             background-color: rgb(255, 255, 255);
             color: $main-color;
             cursor: pointer;
+            &:hover{
+                color: white;
+                background-color: $main-color;
+            }
         }
     }
     @include forMobile{
@@ -150,7 +157,7 @@ background-color: rgb(245, 245, 245);
 
 /*_____NEW CAR SECTION _____*/
 .section__search{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     height: 300px;

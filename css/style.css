@@ -57,10 +57,9 @@ a:hover {
 .main__nav .menu-nav ul li {
   padding: 1em;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 850px) {
   .main__nav .menu-nav {
-    display: flex;
-    justify-content: center;
+    display: none;
   }
 }
 .main__nav .logo {
@@ -94,7 +93,7 @@ a:hover {
 }
 @media screen and (max-width: 599px) {
   .main__nav .icon-medias {
-    display: flex;
+    display: none;
     justify-content: center;
   }
 }
@@ -160,7 +159,6 @@ header .header-bloc .challenger {
 /*_____CHOOSE CAR SECTION _____*/
 .section__choose {
   background: white;
-  padding: 2em;
   height: auto;
 }
 .section__choose .section__choose--div {
@@ -259,33 +257,37 @@ header .header-bloc .challenger {
   margin: 0.5em;
   border: 1px solid grey;
   border-radius: 10px;
+  text-align: center;
+}
+@media screen and (max-width: 599px) {
+  .section__newCar .newCar ul {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .display__car {
-  height: 600px;
+  height: auto;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
 }
 .display__car article {
-  width: 500px;
-  height: 200px;
+  width: 250px;
+  height: 340px;
   border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background-color: white;
-  display: flex;
+  border-top-right-radius: 25px;
+  box-shadow: 1px 1px 6px 1px lightgray;
   margin-bottom: 20px;
+  display: block;
 }
 .display__car article .modelBrand {
   padding: 1em;
 }
 .display__car article img {
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  width: 60%;
+  width: 100%;
+  height: 150px;
 }
 .display__car article h4 {
   font-size: 1.7em;
@@ -297,8 +299,9 @@ header .header-bloc .challenger {
   font-size: 1.5em;
 }
 .display__car article .iconCars {
-  display: block;
+  display: flex;
   color: grey;
+  margin-top: 10px;
 }
 .display__car article .btn-cars {
   width: 80%;
@@ -309,6 +312,10 @@ header .header-bloc .challenger {
   color: #557329;
   cursor: pointer;
 }
+.display__car article .btn-cars:hover {
+  color: white;
+  background-color: #557329;
+}
 @media screen and (max-width: 599px) {
   .display__car {
     height: auto;
@@ -318,7 +325,7 @@ header .header-bloc .challenger {
 /*_____END CHOOSE CAR SECTION _____*/
 /*_____NEW CAR SECTION _____*/
 .section__search {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   height: 300px;
