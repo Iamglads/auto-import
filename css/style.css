@@ -221,20 +221,20 @@ header .header-bloc .challenger {
 .heading .heading__style {
   color: white;
   background-color: #557329;
-  padding: 0.6em;
+  padding: 0.4em;
   transition: transform;
   transform: rotate(30deg);
   border-radius: 10px;
 }
 @media screen and (max-width: 599px) {
   .heading .heading__style {
-    font-size: 1em;
+    font-size: 0.7em;
   }
 }
 @media screen and (max-width: 599px) {
   .heading {
-    padding: 1em;
-    font-size: 1em;
+    padding: 0.5em;
+    font-size: 0.7em;
   }
 }
 
@@ -316,6 +316,68 @@ header .header-bloc .challenger {
 }
 
 /*_____END CHOOSE CAR SECTION _____*/
+/*_____NEW CAR SECTION _____*/
+.section__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+.section__search .section__search--div {
+  display: flex;
+  width: 80%;
+  height: 100px;
+}
+.section__search .section__search--div .search {
+  width: 50%;
+  background-color: rgba(255, 193, 7, 0.8);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 599px) {
+  .section__search .section__search--div .search {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+.section__search .section__search--div .sell {
+  width: 50%;
+  background-color: rgba(0, 131, 143, 0.8);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 599px) {
+  .section__search .section__search--div .sell {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+.section__search .section__search--div h3 {
+  color: grey;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+.section__search .section__search--div p {
+  color: white;
+}
+.section__search .section__search--div .fas {
+  font-size: 2em;
+  color: #557329;
+}
+@media screen and (max-width: 599px) {
+  .section__search .section__search--div {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*_____END NEW CAR SECTION _____*/
 footer {
   display: flex;
   justify-content: center;

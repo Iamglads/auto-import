@@ -147,3 +147,60 @@ background-color: rgb(245, 245, 245);
 }
 
 /*_____END CHOOSE CAR SECTION _____*/
+
+/*_____NEW CAR SECTION _____*/
+.section__search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    .section__search--div{
+        display: flex;
+        width: 80%;
+        height: 100px;
+        .search{
+            width: 50%;
+            background-color: rgba(255, 193, 7, 0.8);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            @include forMobile{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+        .sell{
+            width: 50%;
+            background-color: rgba(0, 131, 143, 0.8);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            @include forMobile{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+        h3{
+            color: grey;
+            text-transform:capitalize ;
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+        p{
+            color: white;
+        }
+        .fas{
+            font-size: 2em;
+            color: $main-color;
+        }
+
+        @include forMobile{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+/*_____END NEW CAR SECTION _____*/
