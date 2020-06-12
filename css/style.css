@@ -6,7 +6,9 @@
 body {
   background-image: url("/images/bg.jpg");
   background-attachment: fixed;
-  background-size: 80%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 li {
@@ -159,7 +161,7 @@ header .header-bloc .challenger {
 /*_____CHOOSE CAR SECTION _____*/
 .section__choose {
   background: white;
-  height: auto;
+  height: 550px;
 }
 .section__choose .section__choose--div {
   height: auto;
@@ -170,8 +172,8 @@ header .header-bloc .challenger {
   margin-top: 3em;
 }
 .section__choose .section__choose--div .card {
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   text-align: center;
   padding: 1em;
   background-color: rgba(236, 234, 234, 0.753);
@@ -197,7 +199,7 @@ header .header-bloc .challenger {
   color: #F57C00;
   padding: 1em;
   border-radius: 100%;
-  background-color: #dbdada;
+  background-color: white;
 }
 @media screen and (max-width: 599px) {
   .section__choose .section__choose--div {
@@ -205,6 +207,11 @@ header .header-bloc .challenger {
   }
 }
 @media screen and (max-width: 599px) {
+  .section__choose {
+    height: auto;
+  }
+}
+@media screen and (max-width: 850px) {
   .section__choose {
     height: auto;
   }
@@ -220,9 +227,7 @@ header .header-bloc .challenger {
   color: white;
   background-color: #557329;
   padding: 0.4em;
-  transition: transform;
-  transform: rotate(30deg);
-  border-radius: 10px;
+  transform: skew(-10deg);
 }
 @media screen and (max-width: 599px) {
   .heading .heading__style {
@@ -325,10 +330,11 @@ header .header-bloc .challenger {
 /*_____END CHOOSE CAR SECTION _____*/
 /*_____NEW CAR SECTION _____*/
 .section__search {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 300px;
+  background-color: rgba(0, 0, 0, 0.596);
 }
 .section__search .section__search--div {
   display: flex;
@@ -385,6 +391,48 @@ header .header-bloc .challenger {
 }
 
 /*_____END NEW CAR SECTION _____*/
+/*_____SECTION CONTACT_____*/
+.section__contact {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__contact form {
+  width: 400px;
+  height: 500px;
+  padding: 1em;
+}
+.section__contact form input {
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 0.5em;
+}
+.section__contact form select {
+  width: 100%;
+}
+.section__contact form textarea {
+  width: 100%;
+  border-radius: 10px;
+}
+.section__contact form input, .section__contact form select, .section__contact form textarea {
+  margin-top: 10px;
+}
+.section__contact form input:focus, .section__contact form select:focus, .section__contact form textarea:focus {
+  border: 1px solid #557329;
+  transition: 300ms;
+}
+.section__contact form #submit {
+  background-color: white;
+  cursor: pointer;
+}
+.section__contact form #submit:hover {
+  background-color: #557329;
+  color: white;
+}
+
+/*_____END SECTION CONTACT_____*/
 footer {
   display: flex;
   justify-content: center;

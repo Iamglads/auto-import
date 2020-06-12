@@ -8,16 +8,16 @@ class Cars {
 
             let cars = data.items;
             cars = cars.map(car => {
-                const { marque, model, prix, moteur, puissance } = car.fields;
+                const { marque, model, prix, moteur, puissance } = car.caracteristiques;
                 const { id } = car.sys;
-                const image = car.fields.image.fields.file.url;
+                const image = car.caracteristiques.image.caracteristiques.file.url;
 
-                return { marque, model, prix, image, id, moteur, puissance};
+                return { marque, model, prix, image, id, moteur, puissance };
             });
             return cars;
+
         } catch (error) {
             console.log(error);
-
         }
     }
 }

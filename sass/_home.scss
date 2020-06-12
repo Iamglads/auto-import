@@ -1,7 +1,7 @@
 /*_____CHOOSE CAR SECTION _____*/
 .section__choose{
     background: white;
-    height: auto;
+    height: 550px;
     .section__choose--div{
         height: auto;
         display: flex;
@@ -10,8 +10,8 @@
         flex-wrap: wrap;
         margin-top: 3em;
         .card{
-            width: 250px;
-            height: 250px;
+            width: 220px;
+            height: 220px;
             text-align: center;
             padding: 1em;
             background-color: rgba(236, 234, 234, 0.753);
@@ -37,7 +37,7 @@
             color: #F57C00;
             padding: 1em;
             border-radius: 100%;
-            background-color: rgb(219, 218, 218);
+            background-color: white;
         }
 
         @include forMobile{
@@ -45,6 +45,9 @@
         }
     }
     @include forMobile{
+        height: auto;
+    }
+    @include forTablet{
         height: auto;
     }
 }
@@ -57,9 +60,7 @@
         color: white;
         background-color: $main-color;
         padding: 0.4em;
-        transition: transform;
-        transform: rotate(30deg);
-        border-radius: 10px;
+        transform: skew(-10deg);
         @include forMobile{
             font-size: 0.7em;
         }
@@ -157,10 +158,11 @@ background-color: rgb(245, 245, 245);
 
 /*_____NEW CAR SECTION _____*/
 .section__search{
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 300px;
+    background-color: rgba(0, 0, 0, 0.596);
     .section__search--div{
         display: flex;
         width: 80%;
@@ -211,3 +213,46 @@ background-color: rgb(245, 245, 245);
     }
 }
 /*_____END NEW CAR SECTION _____*/
+
+/*_____SECTION CONTACT_____*/
+.section__contact{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form{
+        width: 400px;
+        height: 500px;
+        padding: 1em;
+        input{
+            width: 100%;
+            border: 1px solid grey;
+            border-radius: 10px;
+            padding: 0.5em;
+        }
+        select{
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+            border-radius: 10px;
+        }
+        input, select, textarea{
+            margin-top: 10px;
+            &:focus{
+                border:1px solid $main-color;
+                transition:300ms;
+            }
+        }
+
+        #submit{
+            background-color: white;
+            cursor: pointer;
+            &:hover{
+                background-color: $main-color;
+                color: white;
+            }
+        }
+    }
+}
+/*_____END SECTION CONTACT_____*/

@@ -2,91 +2,91 @@
     "items": [
       {
         "sys": { "id": "1" },
-        "fields": {
+        "caracteristiques": {
           "marque": "Bentley",
           "model": "Continental",
           "prix":250000.00,
           "moteur":"Essence",
           "puissance": "450",
-          "image": { "fields": { "file": { "url": "./images/bentley-continental.jpg" } } }
+          "image": { "caracteristiques": { "file": { "url": "./images/bentley-continental.jpg" } } }
         }
       },
       {
         "sys": { "id": "2" },
-        "fields": {
+        "caracteristiques": {
           "marque": "Ford",
           "model": "Mustang",
           "prix": 35000.00,
           "moteur":"Essence",
           "puissance": "450",
-          "image": { "fields": { "file": { "url": "./images/ford-mustang.jpg" } } }
+          "image": { "caracteristiques": { "file": { "url": "./images/ford-mustang.jpg" } } }
         }
       },
       {
         "sys": { "id": "3" },
-        "fields": {
+        "caracteristiques": {
           "marque": "Porsche",
           "model": "911",
           "prix": 130000.00,
           "moteur":"Essence",
           "puissance": "450",
-          "image": { "fields": { "file": { "url": "./images/Porsche-911.jpg" } } }
+          "image": { "caracteristiques": { "file": { "url": "./images/Porsche-911.jpg" } } }
         }
       },
       {
         "sys": { "id": "4" },
-        "fields": {
+        "caracteristiques": {
           "marque": "Chevrolet",
           "model": "Camaro",
           "prix": 40000.00,
           "moteur":"Essence",
           "puissance": "450",
-          "image": { "fields": { "file": { "url": "./images/chevrolet-camaro.jpg" } } }
+          "image": { "caracteristiques": { "file": { "url": "./images/chevrolet-camaro.jpg" } } }
         }
       },
 
       {
         "sys": { "id": "5" },
-        "fields": {
+        "caracteristiques": {
           "marque": "Mercedes",
           "model": "GT",
           "prix":250000.00,
           "moteur":"Essence",
           "puissance": "450",
-          "image": { "fields": { "file": { "url": "./images/mercedes-gt.jpg" } } }
+          "image": { "caracteristiques": { "file": { "url": "./images/mercedes-gt.jpg" } } }
         }
       },
       {
         "sys": { "id": "6" },
-        "fields": {
+        "caracteristiques": {
           "marque": "Lamborghini",
           "model": "Urus",
           "prix": 35000.00,
           "moteur":"Essence",
           "puissance": "450",
-          "image": { "fields": { "file": { "url": "./images/urus.jpg" } } }
+          "image": { "caracteristiques": { "file": { "url": "./images/urus.jpg" } } }
         }
       },
       {
         "sys": { "id": "7" },
-        "fields": {
+        "caracteristiques": {
           "marque": "Audi",
           "model": "RS 6",
           "prix": 130000.00,
           "moteur":"Essence",
           "puissance": "450",
-          "image": { "fields": { "file": { "url": "./images/audi-rs6.jpg" } } }
+          "image": { "caracteristiques": { "file": { "url": "./images/audi-rs6.jpg" } } }
         }
       },
       {
         "sys": { "id": "8" },
-        "fields": {
+        "caracteristiques": {
           "marque": "Aston Martin",
           "model": "DB 11",
           "prix": 40000.00,
           "moteur":"Essence",
           "puissance": "450",
-          "image": { "fields": { "file": { "url": "./images/aston-martin.jpg" } } }
+          "image": { "caracteristiques": { "file": { "url": "./images/aston-martin.jpg" } } }
         }
       }
 

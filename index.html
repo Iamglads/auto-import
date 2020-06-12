@@ -51,7 +51,7 @@
     <!-- SECTION CHOOSE CAR-->
     <section class="section__choose">
         <div class="heading">
-            <h2> CHOISIR <span class="heading__style">IMPORT AUTO</span> </h2>
+          <div class="heading__style"> <h2>CHOISIR IMPORT AUTO</h2></div>
         </div>
 
         <div class="section__choose--div">
@@ -85,7 +85,7 @@
     <!-- SECTION NEW CAR-->
     <section class="section__newCar">
         <div class="heading">
-            <h2> DERNIERE<span class="heading__style">ARRIVEES</span> </h2>
+            <div class="heading__style"><h2>ARRIVEES</h2></div>
         </div>
         <nav class="newCar">
             <ul>
@@ -98,24 +98,7 @@
             </ul>
         </nav>
         <section class="display__car">
-            <!-- Liste véhicules ici
-            
-             <article>
-                <img src="${car.image}" alt="">
-                <div>
-                    <div class="modelBrand">
-                        <h4> ${car.marque}</h4>
-                        <h5> ${car.model}</h5>
-                        <span class="price">${car.prix}</span>
-                        <div class="iconCars">
-                          <i class="fas fa-gas-pump"></i>
-                          <i class="fas fa-tachometer-alt"></i>
-                        </div>
-                        <button class="btn-cars"> Consulter </button>
-                    </div>
-                    
-                </div>
-            </article>`-->
+            <!-- Liste véhicules ici-->
         </section>
     </section>
     <!--END SECTION NEW CAR-->
@@ -138,7 +121,30 @@
             </div>
         </div>
     </section>
-    <!-- SECTION SEARCH CAR-->
+    <!--END SECTION SEARCH CAR-->
+    <!--SECTION CONTACT-->
+    <section class="section__contact">
+        <form action="#">
+            <div>
+                <label for="name">Nom</label>
+                <input type="text" placeholder="Nom" id="name">
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input type="emai" id="email" placeholder="nom.prenom@monsite.fr">
+            </div>
+            <select name="choice" id="choice">
+                <option value="Vendre" aria-disabled="true">Vendre</option>
+                <option value="Acheter">Acheter</option>
+                <option value="Raparation">Entretien</option>
+                <option value="Raparation">Réparation</option>
+                <option value="Raparation">Prendre un café</option>
+            </select>
+            <textarea name="message" id="message" rows="4"></textarea>
+            <input type="submit" id="submit">
+        </form>
+    </section>
+     <!--END SECTION CONTACT-->
     <footer>
         <p> © ImporAuto tous droits réservés</p>
     </footer>

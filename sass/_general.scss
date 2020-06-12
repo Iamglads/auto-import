@@ -5,7 +5,9 @@
 body{
     background-image: url('/images/bg.jpg');
     background-attachment: fixed;
-    background-size: 80%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 li{
