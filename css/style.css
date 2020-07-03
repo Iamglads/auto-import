@@ -405,16 +405,22 @@ header .header-bloc .challenger {
 }
 .section__contact form input {
   width: 100%;
-  border: 1px solid grey;
+  border: 1px solid #d8d8d8;
   border-radius: 10px;
   padding: 0.5em;
 }
 .section__contact form select {
   width: 100%;
+  padding: 0.5em;
+}
+.section__contact form option {
+  background: #557329;
+  color: white;
 }
 .section__contact form textarea {
   width: 100%;
   border-radius: 10px;
+  padding: 0.5em;
 }
 .section__contact form input, .section__contact form select, .section__contact form textarea {
   margin-top: 10px;
@@ -426,6 +432,7 @@ header .header-bloc .challenger {
 .section__contact form #submit {
   background-color: white;
   cursor: pointer;
+  padding: 0.5em;
 }
 .section__contact form #submit:hover {
   background-color: #557329;

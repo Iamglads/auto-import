@@ -1,9 +1,9 @@
 const carsDOM = document.querySelector(".display__car");
-
+const carList = ("cars.json")
 class Cars {
     async getCars() {
         try {
-            let result = await fetch("cars.json");
+            let result = await fetch(carList);
             let data = await result.json();
 
             let cars = data.items;
@@ -52,14 +52,6 @@ class UI {
     }
 }
 
-//local storage 
-
-class Storage {
-    static saveCars(cars) {
-        localStorage.setItem("cars", JSON.stringify(cars));
-        return cars.find(car => car.id === id);
-    }
-}
 
 document.addEventListener('DOMContentLoaded', () => {
     const ui = new UI();
@@ -70,6 +62,5 @@ document.addEventListener('DOMContentLoaded', () => {
         .getCars()
         .then(cars => {
             ui.displayCars(cars);
-            Storage.saveCars(cars);
         });
 });
