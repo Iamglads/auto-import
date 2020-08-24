@@ -105,6 +105,7 @@ background-color: rgb(245, 245, 245);
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    padding: 5em;
     article{
         width: 250px;
         height: 340px;
@@ -151,6 +152,7 @@ background-color: rgb(245, 245, 245);
     }
     @include forMobile{
         height: auto;
+        padding: 0.1em;
     }
 }
 

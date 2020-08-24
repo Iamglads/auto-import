@@ -84,6 +84,7 @@ a:hover {
 .main__nav .icon-medias {
   display: flex;
   align-self: center;
+  cursor: pointer;
 }
 .main__nav .icon-medias .fab {
   color: grey;
@@ -277,6 +278,7 @@ header .header-bloc .challenger {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+  padding: 5em;
 }
 .display__car article {
   width: 250px;
@@ -324,6 +326,7 @@ header .header-bloc .challenger {
 @media screen and (max-width: 599px) {
   .display__car {
     height: auto;
+    padding: 0.1em;
   }
 }
 
