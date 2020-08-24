@@ -162,7 +162,7 @@ header .header-bloc .challenger {
 /*_____CHOOSE CAR SECTION _____*/
 .section__choose {
   background: white;
-  height: 550px;
+  height: auto;
 }
 .section__choose .section__choose--div {
   height: auto;
