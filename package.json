@@ -1,0 +1,27 @@
+{
+  "name": "auto-import",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./style.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iamglads/auto-import.git"
+  },
+  "keywords": [
+    "Javascript",
+    "Api"
+  ],
+  "author": "Gladston Aristoverne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iamglads/auto-import/issues"
+  },
+  "homepage": "https://github.com/Iamglads/auto-import#readme",
+  "dependencies": {
+    "sass": "^1.32.13"
+  }
+}

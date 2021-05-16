@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("/images/bg.jpg");
+  background-color: red;
   background-attachment: fixed;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -163,6 +163,7 @@ header .header-bloc .challenger {
 .section__choose {
   background: white;
   height: auto;
+  padding: 5em;
 }
 .section__choose .section__choose--div {
   height: auto;
